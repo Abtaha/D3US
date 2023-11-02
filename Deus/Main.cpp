@@ -5,9 +5,6 @@
 #include <chrono>
 #include <Windows.h>
 
-// https://www.virustotal.com/gui/file/835ad465661a356e19dbaee02cabb7e9857422e7d840b48d65a6b57dbcb608c9/behavior
-
-
 
 int wmain(int argc, wchar_t* argv[]) {
     if (argc < 2) {

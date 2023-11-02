@@ -125,7 +125,7 @@ int Encrypter::encryptFile(std::wstring filePath) {
 
     DWORD writtenLen;
     const std::string DEUS = "DEUS";
-    ret = Libs::WriteFile(hFile, DEUS.c_str(), DEUS.size(), &writtenLen, NULL);
+    ret = Libs::WriteFile(hFile, DEUS.c_str(), (DWORD)DEUS.size(), &writtenLen, NULL);
 
     if (!ret) {
         Logging::ERR("Error writing chunk\n");
